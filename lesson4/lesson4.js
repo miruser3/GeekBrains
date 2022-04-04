@@ -1,0 +1,10 @@
+"use strict";
+let text=document.querySelector('.work');
+let put=document.querySelector('.text1');
+let put2=document.querySelector('.text2');
+//console.log(text.innerText.replaceAll('\'', '\"'));
+put.insertAdjacentHTML('beforebegin',text.innerText.replaceAll('\'', '\"'));
+console.log(text.innerText.replaceAll('\'', '\"'));
+const text2 = text.innerText.replaceAll('\.\'', '\.\"<br>');
+const text3 = text2.replaceAll('\?\'', '\?\"<br>'); 
+put2.insertAdjacentHTML('beforeend', text3.replaceAll(' \' ', ' \" '));

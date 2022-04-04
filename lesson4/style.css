@@ -1,0 +1,66 @@
+.nav-send{
+    display: flex;
+    flex-direction: column;
+    padding: 56px;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgb(16 112 177 / 20%);
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+}
+.send-top{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+   
+}
+.send-name{
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 8px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+}
+.send-button{
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 21px 42px;
+    margin-bottom: 32px;
+}
+.send-e{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+.send-message{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.send{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+ .nav-button{
+    padding: 23px 83px;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgb(16 112 177 / 20%);
+    border-radius: 10px;
+    margin-bottom: 56px;
+ }
