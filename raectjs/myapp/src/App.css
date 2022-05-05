@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.header-red{
+  background-color: red;
+}
+.header-blue{
+  background-color: blue;
+}
+.massage{
+  background-color: #61dafb;
+  font-size: 30px;
+}
