@@ -2,6 +2,7 @@ import './App.css';
 import Creatmessage from './Message';
 
 function App(props) {
+  const start="start"
   return (
     <div>
       <header className={`App-header ${props.showred ? 'header-red' : 'header-blue'}`}
@@ -10,7 +11,7 @@ function App(props) {
         <h3>Hello, {props.name}</h3>
         
       </header>
-      < Creatmessage />
+      < Creatmessage start={start}/>
     </div>
   );
 }

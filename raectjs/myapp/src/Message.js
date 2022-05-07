@@ -1,7 +1,7 @@
 import './App.css';
 
-function Creatmessage() {
-    return <div className='massage'> Creatmessage Text </div>
+function Creatmessage(props) {
+    return <div className='massage'> Creatmessage Text {props.start} </div>
 }
 
 export default Creatmessage;
