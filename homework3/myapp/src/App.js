@@ -4,13 +4,14 @@ import common from './contans/common';
 import { Fab, Paper, TextField } from '@mui/material';
 import Send from '@mui/icons-material/Send';
 import theme from './theme/theme';
-
-
+import { Route, Routes } from 'react-router-dom';
+import Layot from './components/Layot'
+import Home from './pages/Home';
+import Blog from './pages/Blog';
+import About from './pages/About';
+import Nofound from './Nofound'
 function App() {
-  const unputref = useRef()
-  const Clickbutton = () => {
-    unputref.current.focus()
-  };
+  const unputref = useRef(null)
   const [masseglist, setmes] = useState([])
   const [name, setname] = useState('')
   const change = (event) => { setname(event.target.value) }
@@ -30,9 +31,17 @@ function App() {
 
   return (
     <div className='App-header'>
-      <div>
 
-      </div>
+
+      <Routes>
+        <Route path={'/'} element={<Layot />}>
+          <Route index element={<Home />} />
+          <Route path={'/Blog'} element={<Blog />} />
+          <Route path={'/About'} element={<About />} />
+          <Route path={'*'} element={<Nofound />} />
+        </Route>
+      </Routes>
+
       <h1 className='my'>My Super  UP</h1>
       <Paper elevation={0}>
         <ul className='massegebox' >
@@ -65,7 +74,7 @@ function App() {
       </div>
 
 
-    </div>
+    </div >
   );
 
 }
